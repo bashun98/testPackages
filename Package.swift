@@ -15,8 +15,6 @@ let package = Package(
 		.library(name: "SecondLibrary", targets: ["SecondLibrary"])
     ],
 	dependencies: [
-		.package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.10.0"),
-		.package(url: "https://github.com/onevcat/Kingfisher.git", from: "8.8.0")
 	],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -24,13 +22,11 @@ let package = Package(
         .target(
 			name: "FirstLibrary",
 			dependencies: [
-				.product(name: "Kingfisher", package: "Kingfisher")
 			]
 		),
 		.target(
 			name: "SecondLibrary",
 			dependencies: [
-				.product(name: "Alamofire", package: "Alamofire")
 			]
 		),
         .testTarget(
