@@ -22,6 +22,9 @@ let package = Package(
         .target(
 			name: "FirstLibrary",
 			dependencies: [
+			],
+			exclude: [
+				"Test.swift"
 			]
 		),
 		.target(

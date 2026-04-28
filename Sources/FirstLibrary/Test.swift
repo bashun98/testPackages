@@ -6,3 +6,8 @@
 //
 
 import Kingfisher
+import SnapKit
+
+public enum Test {
+	сase hhhh
+}
